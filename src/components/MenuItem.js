@@ -6,8 +6,8 @@ import React from 'react';
 // Hint: You can use the image name to get the image from the images folder.
 const MenuItem = ({ id, title, description, imageName, price }) => {
     return (
-        <div class="d-flex col-lg-4 align-items-stretch mt-4">
-            <article className="card mx-3 border border-0 col">
+        <div class="d-flex col-lg-4 mt-4 px-0">
+            <article className="card mx-3 border border-0 col px-0">
                 <div className="row g-0">
                     <div className="picture col-2">
                         <img className="img-fluid rounded" src={process.env.PUBLIC_URL + "/images/" + imageName}

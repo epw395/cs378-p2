@@ -105,8 +105,7 @@ function Menu({ list }) {
   return (
     <div className="container d-flex flex-column">
       <h2 className="menu-title">Menu</h2>
-      <section className="menu container card-group row my-4 mx-4 rounded">
-        <div className="row">
+      <section className="menu container-fluid card-group row my-4 rounded px-0 mx-0">
           {list.map(function (item) {
             return (
               <MenuItem
@@ -118,7 +117,6 @@ function Menu({ list }) {
               />
             )
           })}
-        </div>
       </section>
     </div>
   );

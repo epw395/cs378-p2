@@ -75,10 +75,6 @@ h6 {
   transition: all 0.3s ease-in-out;
 }
 
-.menu .card:hover {
-  /* box-shadow: 0 0 15px #E1E1E1; */
-}
-
 .menu-title {
   text-align: center;
   color: var(--primary-brown);
@@ -93,7 +89,6 @@ h6 {
 .menu .card .picture img {
   width: 100%;
   object-fit: cover;
-  border-radius: 10px;
 }
 
 .menu .card .card-title {
