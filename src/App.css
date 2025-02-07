@@ -3,6 +3,135 @@
   Below, you can see an example of a class called "menu" that changes the color of the text to blue. Modify according to your needs.
 */
 
+/* Variables */
+:root {
+
+  /* Colors */
+  --primary-white: #FFFFFF;
+  --primary-brown: #5A4246;
+  --primary-black: #000000;
+  --primary-pink: #F64471;
+  --secondary-pink: #FEDCE5;
+  --secondary-pink-light: #FDE7EE;
+  --secondary-beige: #EFE9E0;
+
+  /* Fonts */
+  --ff-body: Verdana, Geneva, Tahoma, sans-serif;
+  --ff-display: Georgia, 'Times New Roman', Times, serif;
+  --ff-numeral: 'Times New Roman', Times, serif;
+}
+
+.main-body {
+  background-color: var(--secondary-pink-light);
+}
+
+.logo {
+  max-width: 500px;
+}
+
+.header-subtitle {
+  font-weight: 500;
+  font-family: cursive;
+  text-align: center;
+  font-size: large; 
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-display);
+}
+
+/* Menu */
+
 .menu {
-  color: blue;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  align-items: center;
+  color: var(--primary-brown);
+}
+
+@media screen and (min-width: 1024px) {
+  .menu {
+    padding: 10px 20px;
+    background-color: var(--primary-white);
+  }
+
+  .menu .card {
+    padding: 10px 20px;
+  }
+}
+
+.menu .card {
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu .card:hover {
+  /* box-shadow: 0 0 15px #E1E1E1; */
+}
+
+.menu-title {
+  text-align: center;
+  color: var(--primary-brown);
+}
+
+.menu .card .picture {
+  max-width: 100px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
+.menu .card .picture img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.menu .card .card-title {
+  font-size: 1.25em;
+  color: var(--secondary-black);
+}
+
+.menu .card .card-text {
+  font-size: 1.00em;
+  color: var(--secondary-gray);
+}
+
+.menu .card .card-text .price {
+  color: var(--primary-black);
+  font-weight: bold;
+  font-family: var(--ff-numeral);
+}
+
+.menu .card .btn {
+  font-weight: bold;
+  box-shadow: 3px 3px 5px #EEEEEE;
+  color: var(--primary-white);
+  background-color: var(--primary-pink);
+  transition: all 0.3s ease-in-out;
+}
+
+.menu .card .btn:hover {
+  background-color: var(--primary-brown);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 575px) {
+  .menu .card .card-title {
+    font-size: 1.00em;
+  }
+
+  .menu .card .card-text {
+    font-size: 0.75em;
+  }
 }

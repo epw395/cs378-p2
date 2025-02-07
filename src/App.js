@@ -1,7 +1,8 @@
 import './App.css';
 import MenuItem from './components/MenuItem';
+import logo from './assets/natsu-logo-16x9.png';
 
-// import 'bootstrap/dist/css/bootstrap.min.css'; // This imports bootstrap css styles. You can use bootstrap or your own classes by using the className attribute in your elements.
+import 'bootstrap/dist/css/bootstrap.min.css'; // This imports bootstrap css styles. You can use bootstrap or your own classes by using the className attribute in your elements.
 
 // Menu data. An array of objects where each object represents a menu item. Each menu item has an id, title, description, image name, and price.
 // You can use the image name to get the image from the images folder.
@@ -81,14 +82,44 @@ const menuItems = [
 
 function App() {
   return (
-    <div>
-      <h1>Menu</h1>
-      <div className="menu">
-        {/* Display menu items dynamicaly here by iterating over the provided menuItems */}
-        <MenuItem title={menuItems[0].title} /> {/* Example for how to use a component */}
-      </div>
+    <div className="main-body">
+      <Header />
+      <Menu list={menuItems.slice()} />
     </div>
   );
 }
 
 export default App;
+
+function Header() {
+  return (
+    <div className="container mb-4">
+      <img className="logo img-fluid  mx-auto d-block" src={logo} alt="Natsu Nook Logo"></img>
+      <h1 className="visually-hidden">Natsu Nook</h1>
+      <p className="header-subtitle">~Twilights delights for summer nights~</p>
+    </div>
+  );
+}
+
+function Menu({ list }) {
+  return (
+    <div className="container d-flex flex-column">
+      <h2 className="menu-title">Menu</h2>
+      <section className="menu container card-group row my-4 mx-4 rounded">
+        <div className="row">
+          {list.map(function (item) {
+            return (
+              <MenuItem
+                id={item.id}
+                title={item.title}
+                description={item.description}
+                imageName={item.imageName}
+                price={item.price}
+              />
+            )
+          })}
+        </div>
+      </section>
+    </div>
+  );
+}
