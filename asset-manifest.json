@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/cs378-p2/static/css/main.f0f864f1.css",
-    "main.js": "/cs378-p2/static/js/main.840a557c.js",
+    "main.css": "/cs378-p2/static/css/main.b6f1f100.css",
+    "main.js": "/cs378-p2/static/js/main.cf774e97.js",
     "static/js/787.adad572c.chunk.js": "/cs378-p2/static/js/787.adad572c.chunk.js",
     "static/media/natsu-logo-16x9.png": "/cs378-p2/static/media/natsu-logo-16x9.92ba4a27d203fee01fd4.png",
     "index.html": "/cs378-p2/index.html",
-    "main.f0f864f1.css.map": "/cs378-p2/static/css/main.f0f864f1.css.map",
-    "main.840a557c.js.map": "/cs378-p2/static/js/main.840a557c.js.map",
+    "main.b6f1f100.css.map": "/cs378-p2/static/css/main.b6f1f100.css.map",
+    "main.cf774e97.js.map": "/cs378-p2/static/js/main.cf774e97.js.map",
     "787.adad572c.chunk.js.map": "/cs378-p2/static/js/787.adad572c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f0f864f1.css",
-    "static/js/main.840a557c.js"
+    "static/css/main.b6f1f100.css",
+    "static/js/main.cf774e97.js"
   ]
 }
